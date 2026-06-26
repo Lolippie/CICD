@@ -1,0 +1,13 @@
+# Fichiers à exclure du contexte envoyé à Docker.
+# Même logique que .gitignore : évite de copier des fichiers inutiles ou lourds.
+
+node_modules
+dist
+.env*
+*.log
+.git
+.gitignore
+CLAUDE.md
+test-results
+.claude/
+package-lock.json

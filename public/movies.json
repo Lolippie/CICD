@@ -1,0 +1,338 @@
+[
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "rating": 8.687,
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "posterPath": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "rating": 8.526,
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "posterPath": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "rating": 8.486,
+    "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "posterPath": "/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "rating": 8.462,
+    "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+    "posterPath": "/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "rating": 8.4,
+    "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    "posterPath": "/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "rating": 8.438,
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "posterPath": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.237,
+    "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+    "posterPath": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "year": 1980,
+    "rating": 8.393,
+    "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+    "posterPath": "/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "rating": 8.427,
+    "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+    "posterPath": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "rating": 8.412,
+    "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+    "posterPath": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "rating": 8.493,
+    "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+    "posterPath": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "rating": 8.346,
+    "overview": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+    "posterPath": "/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "rating": 9.379,
+    "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Somerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+    "posterPath": "/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg"
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "rating": 8.221,
+    "overview": "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
+    "posterPath": "/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "rating": 7.964,
+    "overview": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+    "posterPath": "/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg"
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "rating": 8.206,
+    "overview": "A mysterious story of two magicians whose intense rivalry leads them on a life-long battle for supremacy -- full of obsession, deceit and jealousy with dangerous and deadly consequences.",
+    "posterPath": "/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg"
+  },
+  {
+    "title": "Parasite",
+    "year": 1982,
+    "rating": 4.812,
+    "overview": "Paul Dean has created a deadly parasite that is now attached to his stomach. He and his female companion, Patricia Welles, must find a way to destroy it while also trying to avoid Ricus & his rednecks, and an evil government agent named Merchant.",
+    "posterPath": "/4DGPORlVIDIQvsuSDnM4uXKMjWS.jpg"
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "rating": 8.128,
+    "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+    "posterPath": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "rating": 8.235,
+    "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    "posterPath": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "rating": 8.236,
+    "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+    "posterPath": "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "rating": 8.026,
+    "overview": "A New York stockbroker refuses to cooperate in a large securities fraud case involving corruption on Wall Street, corporate banking world and mob infiltration. Based on Jordan Belfort's autobiography.",
+    "posterPath": "/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg"
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "rating": 7.6,
+    "overview": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
+    "posterPath": "/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "rating": 7.589,
+    "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+    "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "rating": 9.2,
+    "overview": "An insurance salesman begins to suspect that his whole life is actually some sort of reality TV show.",
+    "posterPath": "/vuza0WqY239yBXOadKlGwJsZJFE.jpg"
+  },
+  {
+    "title": "WALL·E",
+    "year": 2008,
+    "rating": 8.107,
+    "overview": "After hundreds of years doing what he was built for, WALL•E— a robot designed to clean up the earth—discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has inadvertently stumbled upon the key to the planet's future, and races back to space to report to the humans. Meanwhile, WALL•E chases EVE across the galaxy and sets into motion one of the most imaginative adventures ever brought to the big screen.",
+    "posterPath": "/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg"
+  },
+  {
+    "title": "Shrek",
+    "year": 2001,
+    "rating": 7.8,
+    "overview": "It ain't easy bein' green -- especially if you're a likable (albeit smelly) ogre named Shrek. On a mission to retrieve a gorgeous princess from the clutches of a fire-breathing dragon, Shrek teams up with an unlikely compatriot -- a wisecracking donkey.",
+    "posterPath": "/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg"
+  },
+  {
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "year": 2011,
+    "rating": 6.566,
+    "overview": "When Jack crosses paths with a woman from his past, he's not sure if it's love...or if she's a ruthless con artist using him to find the fabled Fountain of Youth.",
+    "posterPath": "/keGfSvCmYj7CvdRx36OdVrAEibE.jpg"
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "year": 2001,
+    "rating": 7.9,
+    "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+    "posterPath": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "year": 2004,
+    "rating": 8.009,
+    "overview": "Year three at Hogwarts means new fun and challenges as Harry learns the delicate art of approaching a Hippogriff, transforming shape-shifting Boggarts into hilarity and even turning back time. But the term also brings danger: soul-sucking Dementors hover over the school, an ally of the accursed He-Who-Cannot-Be-Named lurks within the castle walls, and fearsome wizard Sirius Black escapes Azkaban. And Harry will confront them all.",
+    "posterPath": "/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg"
+  },
+  {
+    "title": "Batman Begins",
+    "year": 2005,
+    "rating": 7.72,
+    "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+    "posterPath": "/sPX89Td70IDDjVr85jdSBb4rWGr.jpg"
+  },
+  {
+    "title": "Iron Man",
+    "year": 2008,
+    "rating": 7.655,
+    "overview": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "posterPath": "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+  },
+  {
+    "title": "Doctor Strange",
+    "year": 2016,
+    "rating": 7.417,
+    "overview": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+    "posterPath": "/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg"
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "rating": 7.363,
+    "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+    "posterPath": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+  },
+  {
+    "title": "Dune",
+    "year": 2021,
+    "rating": 7.777,
+    "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+    "posterPath": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "rating": 7.839,
+    "overview": "Jeffrey 'The Dude' Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.",
+    "posterPath": "/9mprbw31MGdd66LR0AQKoDMoFRv.jpg"
+  },
+  {
+    "title": "Casino Royale",
+    "year": 2006,
+    "rating": 7.568,
+    "overview": "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to establish his financial grip on the terrorist market. M sends Bond—on his maiden mission as a 00 Agent—to attend this game and prevent Le Chiffre from winning. With the help of Vesper Lynd and Felix Leiter, Bond enters the most important poker game in his already dangerous career.",
+    "posterPath": "/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
+  },
+  {
+    "title": "Mission: Impossible - Fallout",
+    "year": 2018,
+    "rating": 7.447,
+    "overview": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+    "posterPath": "/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
+  },
+  {
+    "title": "Heat",
+    "year": 1995,
+    "rating": 7.928,
+    "overview": "Obsessive master thief Neil McCauley leads a top-notch crew on various daring heists throughout Los Angeles while determined detective Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence.",
+    "posterPath": "/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg"
+  },
+  {
+    "title": "Scarface",
+    "year": 1983,
+    "rating": 8.155,
+    "overview": "After getting a green card in exchange for assassinating a Cuban government official, Tony Montana stakes a claim on the drug trade in Miami. Viciously murdering anyone who stands in his way, Tony eventually becomes the biggest drug lord in the state, controlling nearly all the cocaine that comes through Miami. But increased pressure from the police, wars with Colombian drug cartels and his own drug-fueled paranoia serve to fuel the flames of his eventual downfall.",
+    "posterPath": "/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg"
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "rating": 9.17,
+    "overview": "Held in an L.A. interrogation room, Verbal Kint attempts to convince the feds that a mythic crime lord, Keyser Soze, not only exists, but was also responsible for drawing him and his four partners into a multi-million dollar heist that ended with an explosion in San Pedro harbor – leaving few survivors. Verbal lures his interrogators with an incredible story of the crime lord's almost supernatural prowess.",
+    "posterPath": "/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg"
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "rating": 8.167,
+    "overview": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
+    "posterPath": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "rating": 7.94,
+    "overview": "In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.",
+    "posterPath": "/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "rating": 7.794,
+    "overview": "Rocky Balboa is a Philadelphia club fighter who seems to be going nowhere. But when a stroke of fate puts him in the ring with a world heavyweight champion, Rocky knows that it's his one shot at the big time — a once-in-a-lifetime opportunity to go the distance and come out a winner!",
+    "posterPath": "/hEjK9A9BkNXejFW4tfacVAEHtkn.jpg"
+  },
+  {
+    "title": "Shocking Dark",
+    "year": 1989,
+    "rating": 4.387,
+    "overview": "In a polluted future Venice researchers work to improve the situation. One day, unknown forces start killing them. A team of soldiers and a couple of civilians is sent to investigate. Soon, they encounter strange murderous creatures.",
+    "posterPath": "/tztmdSyvfvQBVyzqyh6sKQeJP5g.jpg"
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "rating": 8.324,
+    "overview": "Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to 1985.",
+    "posterPath": "/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg"
+  },
+  {
+    "title": "Jaws",
+    "year": 1975,
+    "rating": 7.68,
+    "overview": "When the seaside community of Amity finds itself under attack by a dangerous great white shark, the town's chief of police, a young marine biologist, and a grizzled shark hunter embark on a desperate quest to kill the beast before it strikes again.",
+    "posterPath": "/tjbLSFwi0I3phZwh8zoHWNfbsEp.jpg"
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "rating": 7.805,
+    "overview": "NYPD cop John McClane's plan to reconcile with his estranged wife is thrown for a serious loop when, minutes after he arrives at her office's Christmas Party, the entire building is overtaken by a group of terrorists. With little help from the LAPD, wisecracking McClane sets out to single-handedly rescue the hostages and bring the bad guys down.",
+    "posterPath": "/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg"
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "rating": 7.674,
+    "overview": "In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the \"Terminator\" back to 1984 to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?",
+    "posterPath": "/qvktm0BHcnmDpul4Hz01GIazWPr.jpg"
+  }
+]

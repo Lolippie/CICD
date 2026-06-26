@@ -1,0 +1,42 @@
+services:
+
+  # Base de données noSQL
+  db:
+    image: mongo:7
+    # volumes: persiste les données sur la machine hôte
+    # Sans ce volume, toutes les données seraient perdues à chaque "docker compose down"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: moviejs
+
+  # API Node.js
+  api:
+    build:
+      # context: racine du projet, permet d'accéder à api/ et public/ depuis le Dockerfile
+      context: .
+      dockerfile: docker/Dockerfile.api
+    environment:
+      # "db" est le nom du service de BDD, Docker fournit le DNS interne
+      MONGODB_URI: mongodb://db:27017/moviejs
+    # depends_on: Docker démarre "db" avant "api"
+    # Cela ne garantit pas que MongoDB est PRÊT, seulement que le conteneur tourne
+    # C'est pourquoi server.js implémente un mécanisme de retry
+    depends_on:
+      - db
+
+  # Frontend (Vite build + server web nginx)
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+# Volume nommé : géré par Docker, survit aux "docker compose down"
+# Pour tout supprimer (y compris les données) : docker compose down -v
+volumes:
+  mongo_data:

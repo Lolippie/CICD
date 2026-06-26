@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies JS</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__left">
+                <a class="brand" href="#" aria-label="Accueil">
+                    <span class="brand__name">VOD</span>
+                </a>
+                <nav class="nav" aria-label="Navigation principale">
+                    <a class="nav__link nav__link--active" href="#" data-nav="home">Accueil</a>
+                    <a class="nav__link" href="#" data-nav="movies">Films</a>
+                    <a class="nav__link" href="#" data-nav="series">Séries</a>
+                    <a class="nav__link" href="#" data-nav="mylist">Ma liste</a>
+                </nav>
+            </div>
+
+            <div class="header__right">
+                <form class="search" role="search" data-search-form>
+                    <label class="sr-only" for="searchInput">Rechercher un titre</label>
+                    <input id="searchInput" class="search__input" type="search"
+                        placeholder="Rechercher un film, une série…" autocomplete="off" data-search-input />
+                </form>
+
+                <div class="profile" aria-label="Profil">
+                    <div class="profile__avatar" aria-hidden="true"></div>
+                    <span class="profile__name" data-user-name>Invité</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero" aria-label="Mise en avant" data-hero>
+                <div class="hero__bg" aria-hidden="true"></div>
+
+                <div class="hero__content">
+                    <p class="hero__kicker" data-hero-kicker>À la une</p>
+                    <h1 class="hero__title" data-hero-title>Catalogue VOD</h1>
+                    <p class="hero__desc" data-hero-desc>
+                        Charge les données depuis un fichier JSON et hydrate cette page en JavaScript.
+                    </p>
+                </div>
+                <section class="toolbar" aria-label="Filtres">
+                    <div class="toolbar__group">
+                        <label class="label" for="minRating">Note minimum</label>
+                        <select id="minRating" class="select" data-filter-min-rating>
+                            <option value="0">Toutes</option>
+                            <option value="7">7+</option>
+                            <option value="8">8+</option>
+                            <option value="9">9+</option>
+                        </select>
+                    </div>
+
+                    <div class="toolbar__group">
+                        <label class="label" for="sortBy">Tri</label>
+                        <select id="sortBy" class="select" data-sort>
+                            <option value="rating_desc">Note (desc)</option>
+                            <option value="rating_asc">Note (asc)</option>
+                            <option value="year_desc">Année (desc)</option>
+                            <option value="year_asc">Année (asc)</option>
+                            <option value="title_asc">Titre (A→Z)</option>
+                            <option value="title_desc">Titre (Z→A)</option>
+                        </select>
+                    </div>
+
+                    <div class="toolbar__group view-toggle">
+                        <button type="button" data-view="cards" class="btn btn--small btn--primary">
+                            Cartes
+                        </button>
+
+                        <button type="button" data-view="table" class="btn btn--small btn--ghost">
+                            Tableau
+                        </button>
+                    </div>
+
+                    <div class="toolbar__group toolbar__group--grow">
+                        <p class="hint" data-result-hint>
+                            Le catalogue sera affiché ici après hydratation.
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="section" aria-label="Catalogue" data-catalog>
+                <div class="section__header">
+                    <h2 class="section__title">Catalogue</h2>
+                    <p class="section__subtitle" data-count> 0 titre</p>
+                </div>
+
+                <div class="grid" data-grid>
+                    <!-- Les cartes seront générées en JavaScript -->
+                </div>
+
+                <div class="empty" data-empty hidden>
+                    <h3 class="empty__title">Aucun résultat</h3>
+                    <p class="empty__desc">
+                        Modifie la recherche ou les filtres pour afficher des contenus.
+                    </p>
+                </div>
+            </section>
+
+            <section data-table>
+                <h2>Liste des films</h2>
+                <div data-table-container></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">
+                Projet pédagogique JavaScript — Hydratation DOM, filtres, tri, fetch local.
+            </p>
+        </footer>
+    </div>
+
+
+    <!-- Template de carte pour génération côté JS -->
+    <template id="cardTemplate">
+        <article class="card" data-card>
+            <div class="card__thumb" aria-hidden="true">
+                <img class="card__thumb" src="" alt="" data-image>
+            </div>
+            <div class="card__body">
+                <h3 class="card__title" data-title>Titre</h3>
+                <p class="card__meta">
+                    <span class="badge" data-year>Année</span>
+                    <span class="badge badge--accent" data-rating>Note</span>
+                </p>
+                <p class="overview" data-overview></p>
+                <!-- <div class="card__actions">
+            <button class="btn btn--small btn--ghost" type="button" data-card-action="details">
+            </button>
+            <button class="btn btn--small btn--primary" type="button" data-card-action="mylist">
+            </button>
+          </div> -->
+            </div>
+        </article>
+    </template>
+
+    <script type="module" src="/src/fetch.js"></script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# Le contexte de build est la racine du projet (voir docker-compose.yml)
+# ce qui nous permet de COPY des fichiers depuis public/
+FROM node:20-alpine
+
+WORKDIR /app
+
+# On copie uniquement les fichiers de dépendances de l'API
+COPY api/package*.json ./
+RUN npm install
+
+# On copie le code de l'API
+COPY api/server.js ./
+
+# On copie movies.json pour le seed initial de la base de données
+COPY public/movies.json ./movies.json
+
+EXPOSE 3000
+
+CMD ["node", "server.js"]
