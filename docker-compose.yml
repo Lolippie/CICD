@@ -30,6 +30,12 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
+      # .dockerignore exclut .env* du contexte de build : vite build ne peut pas
+      # le lire depuis un fichier copié. On passe donc la variable en build arg —
+      # docker compose lit son propre .env à la racine pour l'interpolation ${...},
+      # indépendamment de .dockerignore.
+      args:
+        VITE_TMDB_API_KEY: ${VITE_TMDB_API_KEY}
     ports:
       - "8080:80"
     depends_on:

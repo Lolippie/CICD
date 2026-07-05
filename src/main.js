@@ -1,10 +1,8 @@
 import './style.css'
-import { fetchMovies } from './fetch.js'
+import { fetchMovies, fetchMovieDetailsFromTMDB } from './fetch.js'
 import { sortByYearAsc, buildPosterUrl } from './utils.js'
 
 console.log('movieJS ready')
-
-// const apiKey = import.meta.env.VITE_TMDB_API_KEY
 
 const grid = document.querySelector('[data-grid]')
 const cardsContainer = document.querySelector('[data-catalog]')
@@ -72,24 +70,18 @@ function createMovieCard(movie) {
     overview.textContent = movie.overview.slice(0, 100) + '...'
     image.src = buildPosterUrl(movie.posterPath)
 
+    const detailsButton = clone.querySelector('[data-card-action="details"]')
+    detailsButton.addEventListener('click', () => {
+        // Ouvre les DevTools > Network > filtre "themoviedb" pour voir la clé
+        // partir en clair dans l'URL de la requête.
+        fetchMovieDetailsFromTMDB(movie.title)
+            .then(data => console.log('Réponse TMDB (appel direct navigateur) :', data))
+    })
+
     return clone
 }
 
 function formateMoviesData(movies) {
-    // for (const movie of movies) {
-    //     movie.title = movie.title.charAt(0).toUpperCase() + movie.title.slice(1)
-
-    //     const date = new Date(movie.releaseDate)
-    //     movie.year = date.getFullYear()
-    //     movie.dateLong = date.toLocaleDateString('fr-FR', {
-    //             day: 'numeric',
-    //             month: 'long',
-    //             year: 'numeric'
-    //         })
-
-    //     movie.shortOverview = movie.overview.slice(0, 60) + "..."
-    //     movie.ratingRounded = movie.rating.toFixed(1)
-    // }
 
     return movies.map(movie => {
         const date = new Date(movie.year.toString())
@@ -101,7 +93,7 @@ function formateMoviesData(movies) {
         // movie.hasProperEnding = movie.overview.endsWith(".")
 
         let newTitle = movie.title.trim()
-        newTitle = movie.title.charAt(0).toUpperCase() + movie.title.slice(1)
+        newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1)
 
         let resume = movie.overview.replace("men", "friends").slice(0, 60) + "..."
 

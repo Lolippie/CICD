@@ -18,7 +18,7 @@ async function connectDB(retries = 10, delay = 2000) {
       db = client.db()
       console.log('Connecté à MongoDB')
       return
-    } catch (err) {
+    } catch {
       console.log(`Tentative ${i}/${retries} échouée, nouvelle tentative dans ${delay / 1000}s…`)
       await new Promise(r => setTimeout(r, delay))
     }

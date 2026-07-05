@@ -1,9 +1,12 @@
 # MovieJS
 
-Projet pédagogique JavaScript / Docker réalisé en cours B1 au CEFIM.
+Application de catalogue de films utilisée comme **projet fil rouge du cours CI/CD**
+(Master 1 ingénierie logicielle, en alternance).
 
-Une application de catalogue de films construite avec **Vite** (frontend vanilla JS),
-une **API Express**, et **MongoDB** — le tout orchestré avec **Docker Compose**.
+Construite avec **Vite** (frontend vanilla JS), une **API Express**, et **MongoDB**,
+le tout orchestré avec **Docker Compose**. Elle sert de support pour construire
+progressivement une pipeline complète : lint, tests, sécurité, build d'images,
+déploiement staging/prod sur un VPS.
 
 ---
 
@@ -36,6 +39,7 @@ navigateur → http://localhost:8080
 
 - [Docker](https://docs.docker.com/get-docker/) ≥ 24
 - [Docker Compose](https://docs.docker.com/compose/) ≥ 2 (inclus avec Docker Desktop)
+- [Node.js](https://nodejs.org/) ≥ 20 pour le développement local (lint, tests, `npm run dev`)
 
 ---
 
@@ -44,7 +48,7 @@ navigateur → http://localhost:8080
 ```bash
 # Cloner le projet
 git clone <url-du-repo>
-cd movieJS
+cd cicd
 
 # Construire les images et démarrer tous les services
 docker compose up --build
@@ -79,10 +83,31 @@ docker compose down -v
 
 ---
 
+## Qualité & tests
+
+```bash
+# Lint (ESLint, flat config) — src/, api/, tests/
+npm run lint
+
+# Tests unitaires + fonctionnels (Vitest)
+npm test
+npm run test:watch
+
+# Tests end-to-end (Playwright, contre l'app buildée)
+npm run build
+npm run test:e2e
+```
+
+Un hook **`pre-push`** (Husky) lance `npm run lint` avant chaque push et bloque
+l'envoi si le lint échoue. Il s'installe automatiquement à la racine du projet
+après `npm install` (script `prepare`) — aucune action manuelle nécessaire.
+
+---
+
 ## Structure du projet
 
 ```
-movieJS/
+cicd/
 ├── docker/
 │   ├── Dockerfile          # Frontend : build Vite → nginx
 │   ├── Dockerfile.api      # API : Node.js / Express
@@ -96,9 +121,15 @@ movieJS/
 │   ├── main.js             # Logique frontend (filtres, tri, DOM)
 │   ├── fetch.js            # Appel à /api/movies
 │   └── style.css
+├── tests/
+│   ├── unit/                # Tests unitaires (Vitest)
+│   ├── functional/          # Tests fonctionnels, ex. API ↔ Mongo (Vitest)
+│   └── e2e/                 # Tests end-to-end (Playwright)
+├── seedMovies.js           # Script : génère public/movies.json depuis l'API TMDB
+├── eslint.config.js        # Lint (flat config)
 ├── index.html
 ├── docker-compose.yml      # Orchestration des 3 services
-└── package.json            # Dépendances Vite
+└── package.json            # Dépendances et scripts (dev, build, lint, test)
 ```
 
 ---
@@ -122,7 +153,7 @@ movieJS/
 ## Développement sans Docker
 
 ```bash
-# Installer les dépendances frontend
+# Installer les dépendances frontend (installe aussi le hook pre-push)
 npm install
 
 # Lancer le serveur de développement Vite

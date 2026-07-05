@@ -14,6 +14,11 @@ RUN npm install
 # On copie le reste du code source
 COPY . .
 
+# Reçue en build arg (voir docker-compose.yml) car .dockerignore exclut .env*
+# du contexte de build. Vite lit process.env pour toute variable préfixée VITE_.
+ARG VITE_TMDB_API_KEY
+ENV VITE_TMDB_API_KEY=$VITE_TMDB_API_KEY
+
 # On lance le build Vite → génère le dossier /app/dist
 RUN npm run build
 
