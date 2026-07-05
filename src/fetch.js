@@ -7,7 +7,7 @@ export function fetchMovies() {
     })
 }
 
-// ⚠️ Appel direct à TMDB depuis le navigateur : la clé part avec chaque requête,
+// Appel direct à TMDB depuis le navigateur : la clé part a chaque requête,
 // et se retrouve en clair dans le bundle buildé (dist/assets/*.js) et le Network tab.
 export function fetchMovieDetailsFromTMDB(title) {
     const apiKey = import.meta.env.VITE_TMDB_API_KEY

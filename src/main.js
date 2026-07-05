@@ -72,8 +72,6 @@ function createMovieCard(movie) {
 
     const detailsButton = clone.querySelector('[data-card-action="details"]')
     detailsButton.addEventListener('click', () => {
-        // Ouvre les DevTools > Network > filtre "themoviedb" pour voir la clé
-        // partir en clair dans l'URL de la requête.
         fetchMovieDetailsFromTMDB(movie.title)
             .then(data => console.log('Réponse TMDB (appel direct navigateur) :', data))
     })
@@ -94,9 +92,7 @@ function formateMoviesData(movies) {
 
         let newTitle = movie.title.trim()
         newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1)
-
         let resume = movie.overview.replace("men", "friends").slice(0, 60) + "..."
-
 
         return {
             ...movie,
@@ -155,13 +151,10 @@ function displayMoviesTable(movies) {
         }
 
         const row = document.createElement('tr')
-
         const titleCell = document.createElement('td')
         titleCell.textContent = movie.title
-
         const yearCell = document.createElement('td')
         yearCell.textContent = movie.year
-
         const ratingCell = document.createElement('td')
         ratingCell.textContent = movie.ratingRounded
 
@@ -179,41 +172,25 @@ function sortMovies(array) {
     const sortValue = sortSelect.value
     const sorted = [...array]
 
-    if (sortValue === 'rating_desc') {
-        sorted.sort((a, b) => b.rating - a.rating)
-    }
+    if (sortValue === 'rating_desc') sorted.sort((a, b) => b.rating - a.rating)
 
-    if (sortValue === 'rating_asc') {
-        sorted.sort((a, b) => a.rating - b.rating)
-    }
+    if (sortValue === 'rating_asc') sorted.sort((a, b) => a.rating - b.rating)
 
-    if (sortValue === 'year_desc') {
-        sorted.sort((a, b) => b.year - a.year)
-    }
+    if (sortValue === 'year_desc') sorted.sort((a, b) => b.year - a.year)
 
-    if (sortValue === 'year_asc') {
-        return sortByYearAsc(array)
-    }
+    if (sortValue === 'year_asc') sortByYearAsc(array)
 
-    if (sortValue === 'title_asc') {
-        sorted.sort((a, b) => a.title.localeCompare(b.title))
-    }
+    if (sortValue === 'title_asc') sorted.sort((a, b) => a.title.localeCompare(b.title))
 
-    if (sortValue === 'title_desc') {
-        sorted.sort((a, b) => b.title.localeCompare(a.title))
-    }
+    if (sortValue === 'title_desc') sorted.sort((a, b) => b.title.localeCompare(a.title))
 
     return sorted
 }
 
 function applyFilters() {
     const minRating = Number(minRatingSelect.value)
-
     let filtered = [...movies]
-    filtered = filtered.filter(movie => {
-        return movie.rating >= minRating
-    })
-
+    filtered = filtered.filter(movie => movie.rating >= minRating)
     filtered = sortMovies(filtered)
     currentMovies = filtered
     displayMovies(currentMovies)
