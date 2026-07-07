@@ -1,5 +1,7 @@
 # MovieJS
 
+Modif 1 
+
 Application de catalogue de films utilisée comme **projet fil rouge du cours CI/CD**
 (Master 1 ingénierie logicielle, en alternance).
 
