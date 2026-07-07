@@ -43,7 +43,7 @@ describe('Insertion d\'un film en base de données', () => {
 
     expect(filmEnBase).not.toBeNull()
     expect(filmEnBase.title).toBe('Inception')
-    expect(filmEnBase.year).toBe(2005)
+    expect(filmEnBase.year).toBe(2010)
     expect(filmEnBase.rating).toBe(8.3)
   })
 

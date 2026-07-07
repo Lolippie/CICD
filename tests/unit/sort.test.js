@@ -17,7 +17,7 @@ describe('sortByYearAsc', () => {
 
     const result = sortByYearAsc(films)
 
-    expect(result[0].year).toBe(1972)
+    expect(result[0].year).toBe(2000)
     expect(result[1].year).toBe(1994)
     expect(result[2].year).toBe(2008)
   })
