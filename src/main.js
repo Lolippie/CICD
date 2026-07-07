@@ -34,6 +34,9 @@ fetchMovies()
         displayMovies(movies)
         displayMoviesTable(movies)
         setView('cards')
+
+
+        
     })
 
 
