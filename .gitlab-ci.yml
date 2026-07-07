@@ -1,0 +1,30 @@
+stages:
+  - build
+  - test
+
+image: node:20-alpine
+
+variables:
+  # Le script "prepare" (husky) veut appeler git, absent de l'image alpine.
+  # Inutile de toute façon : les hooks git n'ont aucun sens en CI.
+  HUSKY: "0"
+
+# ─── Stage 1 : build ───────────────────────────────────────────────────────
+# Install des dépendances. node_modules/ part en artefact vers le stage
+# suivant (cf. cache vs artefacts : ici on livre un résultat au job suivant,
+# ce n'est pas une simple optimisation).
+build:
+  stage: build
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
+# ─── Stage 2 : test qualité ────────────────────────────────────────────────
+# Lint sur l'API et le front (cf. eslint.config.js).
+lint:
+  stage: test
+  script:
+    - npm run lint
