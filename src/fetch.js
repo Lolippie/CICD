@@ -13,9 +13,9 @@ export function fetchMovieDetailsFromTMDB(title) {
     const apiKey = import.meta.env.VITE_TMDB_API_KEY
 
     const url =
-        'https://api.themoviedb.org/3/search/movie' +
-        '?api_key=' + apiKey +
-        '&query=' + encodeURIComponent(title)
+        `https://api.themoviedb.org/3/search/movie` +
+        `?api_key=${  apiKey 
+        }&query=${  encodeURIComponent(title)}`
 
     return fetch(url)
         .then(response => response.json())

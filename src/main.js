@@ -34,11 +34,8 @@ fetchMovies()
         displayMovies(movies)
         displayMoviesTable(movies)
         setView('cards')
-
-
         
     })
-
 
 function displayMovies(movies) {
     grid.innerHTML = ''
@@ -50,7 +47,7 @@ function displayMovies(movies) {
     }
 
     emptyState.hidden = true
-    count.textContent = movies.length + ' titres'
+    count.textContent = `${movies.length  } titres`
 
     for (const movie of movies) {
         const card = createMovieCard(movie)
@@ -70,7 +67,7 @@ function createMovieCard(movie) {
     title.textContent = movie.title
     year.textContent = movie.year
     rating.textContent = movie.rating
-    overview.textContent = movie.overview.slice(0, 100) + '...'
+    overview.textContent = `${movie.overview.slice(0, 100)  }...`
     image.src = buildPosterUrl(movie.posterPath)
 
     const detailsButton = clone.querySelector('[data-card-action="details"]')
@@ -95,7 +92,7 @@ function formateMoviesData(movies) {
 
         let newTitle = movie.title.trim()
         newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1)
-        let resume = movie.overview.replace("men", "friends").slice(0, 60) + "..."
+        const resume = `${movie.overview.replace("men", "friends").slice(0, 60)  }...`
 
         return {
             ...movie,
@@ -149,7 +146,7 @@ function displayMoviesTable(movies) {
     const tbody = document.createElement('tbody')
 
     for (const movie of movies) {
-        for (let [key, value] of Object.entries(movie)) {
+        for (const [key, value] of Object.entries(movie)) {
             console.log(key, ':', value);
         }
 

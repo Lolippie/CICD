@@ -19,9 +19,9 @@ const moviesToFetch = [
 
 async function fetchMovie(title) {
   const url =
-    'https://api.themoviedb.org/3/search/movie' +
-    '?api_key=' + apiKey +
-    '&query=' + encodeURIComponent(title)
+    `https://api.themoviedb.org/3/search/movie` +
+    `?api_key=${  apiKey 
+    }&query=${  encodeURIComponent(title)}`
 
   const response = await fetch(url)
   const data = await response.json()
